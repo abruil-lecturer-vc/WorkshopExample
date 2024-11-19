@@ -13,6 +13,8 @@ class DetailViewActivity : AppCompatActivity() {
         binding = ActivityDetailViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Hello world
+
         // Retrieve data from the intent
         val morningRuns = intent.getFloatArrayExtra("morningRuns") ?: floatArrayOf()
         val afternoonRuns = intent.getFloatArrayExtra("afternoonRuns") ?: floatArrayOf()
@@ -29,6 +31,7 @@ class DetailViewActivity : AppCompatActivity() {
 
         // Update the TextView and set button listener
         binding.txtDetails.text = details.toString()
+
         binding.btnBack.setOnClickListener {
             finish()
         }

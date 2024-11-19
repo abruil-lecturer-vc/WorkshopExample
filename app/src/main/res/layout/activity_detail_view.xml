@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DetailViewActivity">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="17dp" />
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
-            <TextView
-                android:id="@+id/txtDetails"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Details will appear here." />
-        </ScrollView>
-
-        <Button
-            android:id="@+id/btnBack"
+        <TextView
+            android:id="@+id/txtDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back to Main" />
-    </LinearLayout>
+            android:layout_gravity="center_horizontal"
+            android:text="Details will appear here." />
+    </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:text="Back to Main" />
+
+</LinearLayout>
